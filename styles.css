@@ -1,0 +1,269 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #333; 
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/passenger-aircraft.jpg') no-repeat center center/cover;
+    color: #74ff00;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Destinations Section */
+#destinations {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.destination-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.destination-card {
+    background: #f8f8f8;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+}
+
+.destination-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.destination-card a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.destination-card a:hover {
+    text-decoration: underline;
+}
+
+/* Affiliate Section */
+#affiliate-links {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#affiliate-links a {
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+}
+
+#affiliate-links a:hover {
+    text-decoration: underline;
+}
+/* Contact Section */
+#contact {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+/* Social Media Section */
+#social-media {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+#social-media h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 20px;
+}
+
+.social-icon:hover {
+    background-color: #007BFF;
+    transform: scale(1.1);
+}
+
+.social-icon.facebook {
+    background-color: #3b5998;
+}
+
+.social-icon.twitter {
+    background-color: #1da1f2;
+}
+
+.social-icon.instagram {
+    background-color: #e1306c;
+}
+
+.social-icon.linkedin {
+    background-color: #0077b5;
+}
+
+.social-icon.pinterest {
+    background-color: #e60023;
+}
+/* Parent container for side-by-side layout */
+#side-by-side-sections {
+    display: flex;
+    flex-wrap: wrap; /* Ensures sections stack on smaller screens */
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+}
+
+/* Styling for individual sections */
+#side-by-side-sections section {
+    flex: 1; /* Equal space for both sections */
+    min-width: 280px; /* Prevent sections from getting too small */
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for sections */
+#side-by-side-sections section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Section titles */
+#side-by-side-sections section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Section paragraphs */
+#side-by-side-sections section p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Buttons inside sections */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: white;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+#left-section {
+    background: url('https://via.placeholder.com/400x300') no-repeat center center / cover;
+    color: white;
+}
+
+#right-section {
+    background: url('https://via.placeholder.com/400x300') no-repeat center center / cover;
+    color: white;
+}
+
+/* Ensure text remains readable */
+#side-by-side-sections section h2,
+#side-by-side-sections section p {
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive: Stacking for smaller screens */
+@media (max-width: 768px) {
+    .destination-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destination-card {
+        width: 80%;
+    }
+    #side-by-side-sections {
+        flex-direction: column;
+        align-items: center;
+    }
+}
